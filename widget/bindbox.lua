@@ -56,7 +56,7 @@ local labels = {
     Tab                   = "Tab",
     space                 = "Space",
     Return                = "Enter",
-    BackSpace             = " ",
+    BackSpace             = "󰁮",
     --
     KP_End                = "Num1",
     KP_Down               = "Num2",
@@ -81,18 +81,18 @@ local labels = {
     --
     XF86MonBrightnessUp   = "󰃟 +",
     XF86MonBrightnessDown = "󰃟 -",
-    XF86AudioRaiseVolume  = force_ltr .. "ﱛ",
-    XF86AudioLowerVolume  = force_ltr .. "ﱜ",
-    XF86AudioMute         = force_ltr .. "ﱝ",
-    XF86AudioPlay         = "契",
-    XF86AudioPause        = "",
-    XF86AudioStop         = "栗",
-    XF86AudioPrev         = "玲",
-    XF86AudioNext         = "怜",
-    XF86AudioRewind       = "丹",
-    XF86AudioForward      = "",
+    XF86AudioRaiseVolume  = "󰕾", --force_ltr .. "",
+    XF86AudioLowerVolume  = "󰖀",
+    XF86AudioMute         = "󰕿",
+    XF86AudioPlay         = "",
+    XF86AudioPause        = "",
+    XF86AudioStop         = "",
+    XF86AudioPrev         = "󰒮",
+    XF86AudioNext         = "󰒭",
+    XF86AudioRewind       = "",
+    XF86AudioForward      = " ",
     --
-    Print                 = "" .. s50p,
+    Print                 = "󰆞" .. s50p,
     XF86Calculator        = "" .. s50p,
 }
 
