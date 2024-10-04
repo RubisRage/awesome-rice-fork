@@ -24,7 +24,7 @@ return {
         },
         properties = {
             floating = true,
-            titlebars_enabled = "toolbox",
+            titlebars_enabled = false,
         },
     },
     {
@@ -39,7 +39,7 @@ return {
         },
         properties = {
             floating = true,
-            titlebars_enabled = true,
+            titlebars_enabled = false,
         },
     },
     {
@@ -51,7 +51,7 @@ return {
             },
         },
         properties = {
-            titlebars_enabled = "toolbox",
+            titlebars_enabled = false,
             floating = true,
             ontop = true,
             sticky = true,
@@ -88,7 +88,7 @@ return {
             floating = true,
             ontop = true,
             sticky = true,
-            titlebars_enabled = "toolbox",
+            titlebars_enabled = false,
             placement = awful.placement.centered,
         },
     },
