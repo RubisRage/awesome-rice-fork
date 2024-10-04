@@ -19,7 +19,7 @@ local global_bindings = {
 
     binding.new {
         modifiers = { mod.super, mod.control },
-        triggers = "j",
+        triggers = "p",
         path = "System",
         description = "Power menu",
         on_press = function()
@@ -69,7 +69,7 @@ local global_bindings = {
     },
 
     binding.new {
-        modifiers = { mod.super },
+        modifiers = { mod.super, mod.control },
         triggers = "h",
         path = "Awesome",
         description = "Keyboard shortcuts",
@@ -87,7 +87,7 @@ local global_bindings = {
 
     binding.new {
         modifiers = { mod.super },
-        triggers = "a",
+        triggers = "r",
         path = "Launcher",
         description = "Launcher",
         on_press = function() awful.spawn(config.actions.show_launcher) end,
@@ -159,23 +159,23 @@ local global_bindings = {
     },
 
 
-    binding.new {
-        modifiers = { mod.super },
-        triggers = "r",
-        path = "Tag",
-        description = "Rename selected tag",
-        on_press = function()
-            local screen = awful.screen.focused()
-            if not screen then
-                return
-            end
-            local tag = screen.selected_tag
-            if not tag then
-                return
-            end
-            screen.topbar.taglist:rename_tag_inline(tag)
-        end,
-    },
+    --binding.new {
+    --    modifiers = { mod.super },
+    --    triggers = "r",
+    --    path = "Tag",
+    --    description = "Rename selected tag",
+    --    on_press = function()
+    --        local screen = awful.screen.focused()
+    --        if not screen then
+    --            return
+    --        end
+    --        local tag = screen.selected_tag
+    --        if not tag then
+    --            return
+    --        end
+    --        screen.topbar.taglist:rename_tag_inline(tag)
+    --    end,
+    --},
 
     binding.new {
         modifiers = { mod.super },
@@ -359,7 +359,7 @@ local global_bindings = {
 
     binding.new {
         modifiers = { mod.super },
-        triggers = binding.group.arrows,
+        triggers = binding.group.vim,
         path = "Client",
         description = "Change focus",
         on_press = function(trigger) cclient.focus(nil, trigger.direction) end,

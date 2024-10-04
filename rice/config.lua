@@ -18,26 +18,27 @@ config.features = {
     torrent_widget = false,
     weather_widget = false,
     redshift_widget = false,
-    wallpaper_menu = false,
+    wallpaper_menu = true,
 }
 
 config.wm = {
     name = "awesome",
 }
 
-local terminal = "alacritty"
-local terminal_execute = terminal .. " -e "
+local terminal = "kitty"
+local terminal_execute = terminal .. " "
 
 config.apps = {
-    shell = "bash",
-    terminal = terminal,
-    editor = terminal_execute .. "micro",
-    browser = "firefox",
-    private_browser = "firefox --private-window",
-    file_manager = terminal_execute .. "lf",
     calculator = "speedcrunch",
     mixer = terminal_execute .. "pulsemixer",
     bluetooth_control = terminal_execute .. "bluetoothctl",
+    shell = "bash",
+    terminal = terminal,
+    editor = terminal_execute .. "nvim",
+    browser = "firefox",
+    private_browser = "firefox --private-window",
+    file_manager = "dolphin",
+    terminal_file_manager = terminal_execute .. "ranger",
 }
 
 config.actions = {

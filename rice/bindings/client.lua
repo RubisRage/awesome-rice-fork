@@ -136,7 +136,7 @@ local client_bindings = {
 
     binding.new {
         modifiers = { mod.shift, mod.super },
-        triggers = binding.group.arrows,
+        triggers = binding.group.vim,
         path = "Client",
         description = "Move",
         on_press = function(trigger, client) cclient.move(client, trigger.direction) end,

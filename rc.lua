@@ -1,3 +1,4 @@
+require("autostart")
 require("develop")
 require("globals")
 

@@ -152,6 +152,12 @@ local M = {
             { trigger = button.wheel_up, direction = "up", y = 1 },
             { trigger = button.wheel_down, direction = "down", y = -1 },
         },
+        vim = {
+            { trigger = "h", direction = "left", x = -1, y = 0 },
+            { trigger = "l", direction = "right", x = 1, y = 0 },
+            { trigger = "j", direction = "up", x = 0, y = 1 },
+            { trigger = "k", direction = "down", x = 0, y = -1 },
+        },
         vim_updown = {
             { trigger = "k", direction = "up", y = 1 },
             { trigger = "j", direction = "down", y = -1 },
